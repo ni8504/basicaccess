@@ -27,10 +27,11 @@
     /* Container */
     .container {
       max-width: 800px;
+      max-height: 1000px; /* Set maximum height */
       margin: 0 auto;
       background-color: #fff;
       border-radius: 8px;
-      overflow: hidden;
+      overflow-y: auto; /* Enable vertical scrolling if content overflows */
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
@@ -38,12 +39,12 @@
     .header {
       background-color: #0066cc;
       color: #fff;
-      padding: 30px 20px;
+      padding: 20px; /* Reduced padding */
       text-align: center;
     }
 
     .header h1 {
-      font-size: 2.5em;
+      font-size: 2em; /* Reduced font size */
       margin-bottom: 10px;
     }
 
@@ -52,17 +53,17 @@
     }
 
     .header p {
-      font-size: 1.2em;
+      font-size: 1.1em; /* Adjusted font size */
     }
 
     /* Features List */
     .features {
-      padding: 20px;
+      padding: 15px; /* Reduced padding */
     }
 
     .features h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
+      font-size: 1.5em; /* Reduced font size */
+      margin-bottom: 15px; /* Reduced margin */
       text-align: center;
       font-weight: 700;
       color: #0066cc;
@@ -75,18 +76,18 @@
     .features li {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 15px;
+      margin-bottom: 10px; /* Reduced margin */
     }
 
     .features li span {
-      margin-right: 10px;
-      font-size: 1.2em;
+      margin-right: 8px; /* Reduced margin */
+      font-size: 1em; /* Reduced font size */
       margin-top: 2px;
     }
 
     .features li .text {
       flex: 1;
-      font-size: 1.1em;
+      font-size: 1em; /* Reduced font size */
     }
 
     .features li.included span {
@@ -99,19 +100,18 @@
 
     /* Call to Action Button */
     .cta-button {
-      display: block;
       text-align: center;
-      padding: 20px;
+      padding: 15px; /* Reduced padding */
       background-color: #f5f5f5;
     }
 
     .cta-button a {
       display: inline-block;
-      padding: 15px 30px;
+      padding: 12px 24px; /* Reduced padding */
       background-color: #0066cc;
       color: #fff;
       text-transform: uppercase;
-      font-size: 1.2em;
+      font-size: 1em; /* Reduced font size */
       font-weight: 700;
       border: none;
       border-radius: 5px;
@@ -127,43 +127,43 @@
     /* Responsive Design */
     @media (max-width: 768px) {
       .header h1 {
-        font-size: 2em;
-      }
-
-      .header p {
-        font-size: 1em;
-      }
-
-      .features h2 {
-        font-size: 1.5em;
-      }
-
-      .features li .text {
-        font-size: 1em;
-      }
-
-      .cta-button a {
-        font-size: 1em;
-        padding: 12px 24px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .header h1 {
         font-size: 1.8em;
       }
 
       .header p {
-        font-size: 0.9em;
+        font-size: 1em;
       }
 
       .features h2 {
-        font-size: 1.2em;
+        font-size: 1.3em;
+      }
+
+      .features li .text {
+        font-size: 0.9em;
       }
 
       .cta-button a {
         font-size: 0.9em;
         padding: 10px 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 1.5em;
+      }
+
+      .header p {
+        font-size: 0.9em;
+      }
+
+      .features h2 {
+        font-size: 1.1em;
+      }
+
+      .cta-button a {
+        font-size: 0.8em;
+        padding: 8px 16px;
       }
     }
   </style>
